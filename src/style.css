@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Vidaloka";
+    src: url("./Vidaloka-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src: url("./PublicSans-Light.ttf");
+    font-weight: 300;
+}
+
+body, html, #content {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: "Public Sans", sans-serif;
+}
+
+.header {
+    width: 100vw;
+    height: 5vh;
+    background-color: rgb(193, 2, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header nav button {
+    padding: 3px 20px;
+    margin: 0px 4vw;
+
+    font-size: 1rem;
+    font-family: "Vidaloka", sans-serif;
+    color: white;
+
+    border-style: none;
+    background-color: transparent;
+}
+
+.header nav button:hover {
+    text-decoration: underline;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-image {
+    background-image: url("https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqfxK1vEIt4ZCPHIadkMyJIFn0ZgjGazDcwpDP30zBkFzVnHLV4ccC6zgH_YmhMD7rgOq2SwPn_VNznS5O_NKnSfixUaujY0DEjkE8CoswBZK990unafMN1HHcGkJG2m2XOc_BL8Q=s1360-w1360-h1020-rw");
+    filter: blur(3.5px);
+
+    height: 100vh;
+    width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-image p {
+    height: 200px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("https://assets-us-01.kc-usercontent.com:443/9a573028-2634-00ff-f74d-e14dd5562ac0/d8f3b74d-bc19-445f-9c52-53d8b261172a/Hero%20Teas.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(193, 2, 48);
+    font-family: "Vidaloka", sans-serif;
+    color: white;
+}
+
+.welcome h2 {
+    margin: 0.5vh;
+}
+
+.welcome h1 {
+    margin-top: 5vh;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.welcome p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0;
+}
+
+.gc-logo img {
+    max-width: 25vw;
+}
+
+.new {
+    position: relative;
+    top: -500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-header {
+    padding: 20px;
+    color: white;
+    text-align: center;
+
+    font-size: 2rem;
+    font-family: "Vidaloka", sans-serif;
+}
+
+.new img {
+    border-radius: 5%;
+}
