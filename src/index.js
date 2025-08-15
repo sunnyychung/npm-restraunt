@@ -1,65 +1,86 @@
 import "./style.css";
 import gcLogo from "./gcLogo.png";
 
+let page = 0;
+
 // Navbar
 document.querySelector(".header").appendChild(document.createElement("nav"))
 
 for (let i = 0; i < 3; i++) {
     let text;
+    let href;
+    const link = document.createElement("a");
     const button = document.createElement("button");
+
     switch (i) {
         case 0:
             text = "Home";
+            href = "template.html"
             break;
         case 1:
-            text = "News";
+            text = "Menu";
+            href = "menu.html"
             break;
         case 2:
             text = "Location";
+            href = "location.html"
             break;
     }
-    button.textContent = text
+    if (i == page) {
+        link.className = "selected";
+    }
+    link.textContent = text
+    link.href = href;
+
+    button.appendChild(link)
+
     document.querySelector(".header nav").appendChild(button);
 }
 
-// Welcome Section
-const welcomeDiv = document.createElement("div");
-welcomeDiv.className = "welcome";
-document.querySelector("#content").appendChild(welcomeDiv);
+switch (page) {
+    case 0:
+        const home = document.createElement("div");
 
-const welcomeSelector = document.querySelector(".welcome");
+        // Welcome Section
+        const welcomeDiv = document.createElement("div");
+        welcomeDiv.className = "welcome";
 
-const gcImage = document.createElement("img");
-gcImage.src = gcLogo;
-welcomeSelector.appendChild(gcImage);
+        const gcImage = document.createElement("img");
+        gcImage.src = gcLogo;
+        welcomeDiv.appendChild(gcImage);
 
-const welcomeH2 = document.createElement("h2");
-welcomeH2.textContent = "Bold Street"
-welcomeSelector.appendChild(welcomeH2);
+        const welcomeH2 = document.createElement("h2");
+        welcomeH2.textContent = "Bold Street"
+        welcomeDiv.appendChild(welcomeH2);
 
-const welcomeH1 = document.createElement("h1");
-welcomeH1.innerHTML = "How Tea is <br> Meant to Be";
-welcomeSelector.appendChild(welcomeH1);
+        const welcomeH1 = document.createElement("h1");
+        welcomeH1.innerHTML = "How Tea is <br> Meant to Be";
+        welcomeDiv.appendChild(welcomeH1);
 
-const welcomeP = document.createElement("p")
-welcomeP.innerHTML = "Freshly brewed, whole leaf tea crafted by our tea experts for a rich, smooth flavour. <br> Experience the taste of real tea, done right.";
-welcomeSelector.appendChild(welcomeP);
+        const welcomeP = document.createElement("p")
+        welcomeP.innerHTML = "Freshly brewed, whole leaf tea crafted by our tea experts for a rich, smooth flavour. <br> Experience the taste of real tea, done right.";
+        welcomeDiv.appendChild(welcomeP);
 
-// Second Section
-const s2Div = document.createElement("div");
-s2Div.className = "section2";
-document.querySelector("#content").appendChild(s2Div);
+        // Second Section
+        const s2Div = document.createElement("div");
+        s2Div.className = "section2";
 
-const s2New = document.createElement("div");
-s2New.className = "new";
-document.querySelector(".section2").appendChild(s2New);
+        const s2New = document.createElement("div");
+        s2New.className = "new";
+        s2Div.appendChild(s2New);
 
-const s2P = document.createElement("p");
-s2P.className = "new-header"
-s2P.textContent = "Our Latest Release";
-document.querySelector(".new").appendChild(s2P);
+        const s2P = document.createElement("p");
+        s2P.className = "new-header"
+        s2P.textContent = "Our Latest Release";
+        s2New.appendChild(s2P);
 
-const s2Img = document.createElement("img");
-s2Img.src = "https://gongchausofficial.com/wp-content/uploads/2025/05/Mini-768x384.jpg";
-document.querySelector(".new").appendChild(s2Img);
+        const s2Img = document.createElement("img");
+        s2Img.src = "https://gongchausofficial.com/wp-content/uploads/2025/05/Mini-768x384.jpg";
+        s2New.appendChild(s2Img);
 
+        home.appendChild(welcomeDiv);
+        home.appendChild(s2Div);
+
+        document.querySelector("#content").appendChild(home);
+        break;
+}
