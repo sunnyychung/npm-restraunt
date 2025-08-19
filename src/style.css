@@ -4,13 +4,13 @@
 
 @font-face {
     font-family: "Vidaloka";
-    src: url("./Vidaloka-Regular.ttf");
+    src: url("./resources/fonts/Vidaloka-Regular.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Public Sans";
-    src: url("./PublicSans-Light.ttf");
+    src: url("./resources/fonts/PublicSans-Light.ttf");
     font-weight: 300;
 }
 
@@ -54,7 +54,7 @@ p {
     text-decoration: underline;
 }
 
-.selected {
+a, .selected {
     text-decoration: underline;
 }
 

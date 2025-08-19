@@ -1,6 +1,6 @@
 import "./style.css";
-import gcLogo from "./gcLogo.png";
-import loadHome from "./home.js";
+import gcLogo from "./resources/imgs/gcLogo.png";
+import loadHome from "./modules/home.js";
 
 let page = 0;
 
@@ -9,29 +9,24 @@ document.querySelector(".header").appendChild(document.createElement("nav"))
 
 for (let i = 0; i < 3; i++) {
     let text;
-    let href;
     const link = document.createElement("a");
     const button = document.createElement("button");
 
     switch (i) {
         case 0:
             text = "Home";
-            href = "template.html"
             break;
         case 1:
             text = "Menu";
-            href = "menu.html"
             break;
         case 2:
             text = "Location";
-            href = "location.html"
             break;
     }
     if (i == page) {
         link.className = "selected";
     }
     link.textContent = text
-    link.href = href;
 
     button.appendChild(link)
 
@@ -41,7 +36,11 @@ for (let i = 0; i < 3; i++) {
 switch (page) {
     case 0:
         loadHome();
+        console.log("pillow");
+        break;
+    case 1:
+        console.log("hello")
         break;
 }
 
-export {gcLogo};
+export {gcLogo};    

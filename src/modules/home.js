@@ -1,4 +1,4 @@
-import { gcLogo } from "./index.js";
+import { gcLogo } from "../index.js";
 
 function loadHome() {
     const home = document.createElement("div");
@@ -45,4 +45,4 @@ function loadHome() {
             document.querySelector("#content").appendChild(home);
 }
 
-export default loadHome();
+export default loadHome;
