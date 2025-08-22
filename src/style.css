@@ -1,5 +1,6 @@
 :root {
     font-size: 20px;
+    --gong-cha-red: rgb(193, 2, 48);
 }
 
 @font-face {
@@ -19,16 +20,15 @@ body, html, #content {
     width: 100vw;
     padding: 0;
     margin: 0;
+    background-color: rgb(252 246 237);
 }
 
-p {
-    font-family: "Public Sans", sans-serif;
-}
+/* Nav */
 
 .header {
     width: 100vw;
     height: 5vh;
-    background-color: rgb(193, 2, 48);
+    background-color: var(--gong-cha-red);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,13 +58,19 @@ a, .selected {
     text-decoration: underline;
 }
 
-#content div {
+/* Home Page */
+
+#content .home {
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 100vh;
     margin: 0;
     padding: 0;
+}
+
+.home p {
+    font-family: "Public Sans", sans-serif;
 }
 
 .welcome {
@@ -78,7 +84,7 @@ a, .selected {
 
     align-items: center;
     width: 100%;
-    background-color: rgb(193, 2, 48);
+    background-color: var(--gong-cha-red);
     font-family: "Vidaloka", sans-serif;
     color: white;
 }
@@ -144,3 +150,71 @@ a, .selected {
     border-radius: 5%;
     max-width: 100%;
 }
+
+/* Menu Page */
+
+.menu h1 {
+    text-align: center;
+    font-family: "Vidaloka", sans-serif;
+    color: var(--gong-cha-red);
+}
+
+.milktea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.milktea h2 {
+    color: var(--gong-cha-red);
+}
+
+.drinks {
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(50px, 1fr)) / repeat(auto-fill, minmax(400px, 1.5fr));
+    gap: 1rem;
+    margin: 0 8rem;
+}
+
+.drink {
+    display: flex;
+    grid-template-columns: 0.1fr 1fr;
+    border-radius: 11%;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Vidaloka", sans-serif;
+    background: #ffffff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(105, 37, 1, 1) 100%);
+}
+
+.drink img {
+    height: 25vh;
+    padding: 0.5rem;
+    padding-right: 1rem;
+    padding-top: 0;
+    margin: 0;
+}
+
+.drink h3 {
+    color: black;
+    font-size: 1.2em;
+    padding-right: 2vw;
+    padding-top: 0vh;
+    margin-bottom: 0.2em;
+    margin-top: 0;
+    color: black;
+}
+
+.drink p {
+    padding-right: 2vw;
+    font-size: 0.8em;
+    margin-top: 0;
+    font-family: "Public Sans", sans-serif;
+    color: black;
+}
+
+.drink div {
+    margin: 0;
+}
+
