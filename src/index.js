@@ -1,6 +1,7 @@
 import "./style.css";
 import gcLogo from "./resources/imgs/gcLogo.png";
 import loadHome from "./modules/home.js";
+import loadMenu from "./modules/menu.js";
 
 let page = 1;
 
@@ -36,10 +37,9 @@ for (let i = 0; i < 3; i++) {
 switch (page) {
     case 0:
         loadHome();
-        console.log("pillow");
         break;
     case 1:
-        console.log("hello")
+        loadMenu();
         break;
 }
 

@@ -185,7 +185,7 @@ a, .selected {
 
     font-family: "Vidaloka", sans-serif;
     background: #ffffff;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(105, 37, 1, 1) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(92, 29, 0, 1) 100%);
 }
 
 .drink img {
@@ -203,7 +203,7 @@ a, .selected {
     padding-top: 0vh;
     margin-bottom: 0.2em;
     margin-top: 0;
-    color: black;
+    color: rgb(37, 37, 37);
 }
 
 .drink p {
