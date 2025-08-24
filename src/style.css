@@ -1,5 +1,5 @@
 :root {
-    font-size: 20px;
+    font-size: 2vh;
     --gong-cha-red: rgb(193, 2, 48);
 }
 
@@ -90,7 +90,7 @@ a, .selected {
 }
 
 .welcome img {
-    width: 40vh;
+    height: 10vh;
 }
 
 .welcome h2 {
@@ -171,9 +171,9 @@ a, .selected {
 
 .drinks {
     display: grid;
-    grid-template: repeat(auto-fit, minmax(50px, 1fr)) / repeat(auto-fill, minmax(400px, 1.5fr));
+    grid-template: repeat(auto-fit, minmax(50px, 1fr)) / repeat(auto-fill, minmax(300px, 1.5fr));
     gap: 1rem;
-    margin: 0 8rem;
+    margin: 0 4vw;
 }
 
 .drink {
@@ -229,13 +229,14 @@ a, .selected {
 .location p {
     font-family: "Public Sans", sans-serif;
     font-size: 1rem;
-    padding: 0 7rem;
+    padding: 0 7vw;
     margin-top: 0;
     text-align: center;
 
 }
 
 .location div {
+    margin-top: 5vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -247,5 +248,5 @@ a, .selected {
 }
 
 .location div img {
-    height: 450px;
+    height: 300px;
 }
