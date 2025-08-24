@@ -153,7 +153,7 @@ a, .selected {
 
 /* Menu Page */
 
-.menu h1 {
+.menu h1, .location h1 {
     text-align: center;
     font-family: "Vidaloka", sans-serif;
     color: var(--gong-cha-red);
@@ -218,3 +218,34 @@ a, .selected {
     margin: 0;
 }
 
+/* Location Page */
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location p {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1rem;
+    padding: 0 7rem;
+    margin-top: 0;
+    text-align: center;
+
+}
+
+.location div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.location div iframe {
+    border: 0;
+}
+
+.location div img {
+    height: 450px;
+}
