@@ -3,7 +3,7 @@ import gcLogo from "./resources/imgs/gcLogo.png";
 import loadHome from "./modules/home.js";
 import loadMenu from "./modules/menu.js";
 
-let page = 1;
+let page = 2;
 
 // Navbar
 document.querySelector(".header").appendChild(document.createElement("nav"))
