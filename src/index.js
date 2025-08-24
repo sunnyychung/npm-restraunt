@@ -67,8 +67,8 @@ for (let i = 0; i < 3; i++) {
     })
 
     document.querySelector(".header nav").appendChild(button);
-    
-    
 }
+
+switchPage(0);
 
 export {gcLogo, gcShop};    
